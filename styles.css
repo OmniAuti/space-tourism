@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* TYPOGRAPHY */
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+
+}
+
+/* -------- HEADER -------- */
+
+/* - make header appear as you scroll down. Not right away.*/
+header {
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+
+    display: none;
+    
+}
+
+.logo {
+    width: 50%;
+    height: inherit;
+    position: relative;
+    float: left;
+}
+
+.logo img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: inherit;
+    width: 75px;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    position: relative;
+    height: 10vh;
+    width: 50%;
+    float: right;
+}
+
+nav ul {
+    list-style-type: none; 
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY( -50%);
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.25em;
+    color: #fff;
+    padding: 1.5em;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+/* -------- HERO -------- */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 5em;
+    margin-top: 1em;
+    transform: translateZ(100px);
+    z-index: 99;
+}
+
+span {
+    display: block;
+    font-size: 2.75rem;
+    font-weight: 100;
+}
+
+.hero img {
+    height: 100px;
+    position: absolute;
+    
+}
+
+.mars {
+    bottom: -200px;
+    left: 75%;
+    height: 180px !important;
+    width: 180px;
+    animation-name: mars;
+    animation-iteration-count: infinite;
+    animation-duration: 20000ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 2500ms;
+}
+
+@keyframes mars {
+    0% {
+        bottom: -50%;
+        left: 77%;
+        transform: rotate(110deg);
+    }
+
+    50% {
+        bottom: 100%;
+        left: 39%;
+        transform: rotate(190deg);
+    }
+
+    100% {
+        bottom: 150%;
+        left: -5%;
+        transform: rotate(360deg);
+    }
+}
+
+.neptune {
+    left: -100px;
+    top: 50%;
+    animation-name: neptune;
+    animation-timing-function: linear;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 10000ms;
+}
+
+@keyframes neptune {
+    0% {
+        left: -10%;
+        top: 50%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        left: 100%;
+        transform: rotate(-50deg);
+        display: none;
+    }
+
+    100% {
+        left: 100%;
+
+    }
+}
+
+.spaceship {
+    top: -200px;
+    animation-name: ship;
+    animation-iteration-count: infinite;
+    animation-duration: 60000ms;
+    animation-timing-function: linear;
+    animation-delay: 1500ms;
+  
+}
+
+@keyframes ship {
+    0% {
+        top: -20%;
+        right: 85%;
+        transform: rotate(-40deg);
+        height: 10px;
+    }
+
+    1% {
+        top: 65%;
+        transform: rotate(-40deg);
+        right: 50%;
+        height: 100px;
+    }
+
+    4% {
+        top: 90%;
+        transform: rotate(-120deg);
+        right: 50%;
+        height: 100px;
+    }
+
+   
+    5% {
+        top: 30%;
+        right: 10%;
+        transform: rotate(-120deg);
+        height: 100px;
+    }
+
+    7% {
+        transform: rotate(-270deg);
+        right: 5%;
+        height: 100px;
+    }
+
+    9% {
+        right: 100%;
+        top: 30%;
+        transform: rotate(-270deg);
+        height: 25px;
+    }
+
+    100% {
+        right: 100%;
+        top: 30%;
+        transform: rotate(-270deg)
+    }
+
+}
+
+
+.moon {
+    left: -30%;
+    top: -60%;
+    height: 750px !important;
+    z-index: 9;
+    animation-name: moon;
+    animation-duration: 200000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.jupiter {
+    bottom: 0;
+    animation-name: jupiter;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jupiter {
+    0% {
+        bottom: -20%;
+        right: 80%;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        bottom: -5%;
+        right: 70%;
+        transform: rotate(10deg);
+    }
+
+    20% {
+        bottom: 7.5%;
+        right: 60%;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        bottom: 10%;
+        right: 55%;
+        transform: rotate(5deg);
+    }
+
+    28% {
+        bottom: 11%;
+        right: 52%;
+        transform: rotate(2.5deg);
+    }
+
+    29% {
+        bottom: 11.5%;
+        right: 51%;
+        transform: rotate(1.5deg);
+    }
+
+    30% {
+        bottom: 11.75%;
+        right: 50%;
+        transform: rotate(0deg);
+    }
+
+    31% {
+        bottom: 11.5%;
+        right: 49%;
+        transform: rotate(1.5deg);
+    }
+
+    32% {
+        bottom: 11%;
+        right: 48%;
+        transform: rotate(2.5deg);
+    }
+
+    35% {
+        bottom: 10%;
+        right: 45%;
+        transform: rotate(5deg);
+    }
+
+    40% {
+        bottom: 7.5%;
+        right: 40%;
+        transform: rotate(10deg);
+    }
+
+    50% {
+        bottom: 0%;
+        right:30%;
+        transform: rotate(0deg);
+    }
+
+    60% {
+        bottom: -10%;
+        right: 20%;
+        transform: rotate(10deg);
+    }
+    70% {
+        bottom: -20%;
+        right: 10%;
+    }
+
+    80% {
+        bottom: -20%;
+        right: 0%;
+    }
+
+    90% {
+        bottom: -20%;
+        right: 15%;
+    }
+     100% {
+        bottom: -20%;
+        right: 10%;
+        
+     }
+
+ }
+    
+
+
+
+.missions {
+   
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: green;
+}

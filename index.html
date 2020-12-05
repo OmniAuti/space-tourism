@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distant Earth Spaceliner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="img/astronaut.png" alt="spaceship logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#saftey">Saftey First</a></li>
+                <li><a href="#plan">Plans</a></li>
+                <li><a href="#sign-up" accesskey="u">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        
+        <h1>Distant Earth Spaceliners <span>A home among the stars</span></h1>
+       
+        <img src="img/jupiter.png" alt="jupiter" class="jupiter">
+        <img src="img/moon.png" alt="moon" class="moon">
+        <img src="img/neptune.png" alt="neptune" class="neptune">
+        
+        <img src="img/mars.png" alt="mars" class="mars">
+
+        <img src="img/space-ship.png" alt="spaceship" class="spaceship">
+
+    </section>
+
+    <section class="missions">
+        <div class="left-side">
+
+        </div>
+
+        <div class="right-1">
+            <h1>Earth's Orbit</h1>
+        </div>
+        <div class="right-2">
+            <h1>The Moon</h1>
+        </div>
+        <div class="right-5">
+            <h1>Mars</h1>
+        </div>
+    </section>
+
+    <section class="price" id="price">
+        <h1>Mission Pricing</h1>
+        <table>
+            <thead>
+                <th>Mission:</th>
+                <th>Earth's Orbit</th>
+                <th>Lunar Orbit</th>
+                <th>Darkside Tour</th>
+                <th>Moon Base Resort Package</th>
+                <th>Mars Base Resort Package</th>
+                <th>One Way - Moon</th>
+                <th>One Way - Mars</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Price</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Included</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Travel Time</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Starliner Model</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="saftey">
+        <h1>Saftey First</h1>
+    </section>
+
+    <section class="sign-up" id="sign-up">
+<h1>Book Today!</h1>
+
+        <form action="mailto:austin.olijar@gmail.com" method="POST">
+        
+            <label for="plans">Mission Plan:</label>
+            <select name="plans" id="plans" required>
+                <option value="orbit">Earth's Orbit</option>
+                <option value="moon">Lunar Orbit</option>
+                <option value="moon-darkside">Darkside Tour</option>
+                <option value="moon-base">Moon Base One Way</option>
+                <option value="moon-base-package">Moon Base Resort Package</option>
+                <option value="mars">Mars One Way</option>
+                <option value="mars-package">Mars Resort Package</option>
+            </select>
+
+             
+            <label for="date">Ideal Launch Date:</label>
+            <input type="date" name="date" id="date" required>
+      
+
+            <fieldset>
+                <legend>Passenger Information</legend>
+
+                <div class="contain-form">
+                    <label for="passenger-1">Passenger Name:</label>
+                    <input type="text" name="passenger-1" id="passenger-1" required placeholder="First & Last">
+                </div>
+
+                <div class="contain-form">
+                    <label for="passenger-2">Additional Passenger:</label>
+                    <input type="text" name="passenger-2" id="passenger-2" placeholder="First & Last">
+                </div>
+
+                <div class="contain-form">
+                    <label for="gov-id">Government ID:</label>
+                    <select name="gov-id" id="gov-id" required>
+                        <option value="passport">Passport</option>
+                        <option value="greencard">Green Card</option>
+                        <option value="driver-id">Driver's License</option>
+                    </select>
+                    <label for="exp">Expire Date:</label>
+                    <input type="date" name="gov-id" id="exp" required>
+                    <label for="gov-id-num">Number:</label>
+                    <input type="text" name="gov-id-num" id="gov-id-num" placeholder="1234567890" required max="10">
+                </div>
+
+                <div class="contain-form">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" max="100" min="18" required placehold="18">
+                </div>
+
+                <div class="contain">
+
+                <label for="">Phone Number</label>
+
+                <input type="text" name="phone" id="phone" pattern="[0-9][!a-zA-Z!@#$%^&*()]" required placeholder="+1 (555)-555-5555">
+
+                </div>
+
+                <div class="contain">
+                    <label for="bags">Will You Check Bags?</label>
+                    <input type="radio" name="bags" id="bags" value="yes">Yes
+                    <input type="radio" name="bags" id="bags" value="no">No
+                </div>
+                <div class="containt">
+                    <label for="bags-num">How Many Bags?</label> <!--JAVASCRIPT FOR THIS TO APPEAR IF THEY CHECKED YES FOR RADIO???-->
+                    <input type="number" name="bags-num" id="bags-num" min="0" max="3">
+                </div>
+
+                <div class="contain">
+                    <label for="food">Inflight Meal:</label>
+                    <select name="meal" id="meal">
+                        <option value="steak">Steak</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="fish">Fish</option>
+                        <option value="veg">Vegetarian</option>
+                    </select>
+                    <label for="sides">Side Dishes:</label>
+                    <input type="checkbox" name="sides" id="sides" value="fries">Fries
+                    <input type="checkbox" name="sides" id="sides" value="mashed">Mashed Potatoes
+                    <input type="checkbox" name="sides" id="sides" value="salad">Salad
+                </div>
+
+            </fieldset>
+
+            <button>Book It!</button>
+
+        </form>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

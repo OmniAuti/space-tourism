@@ -15,6 +15,10 @@ h1 {
 
 }
 
+p {
+    color: #232323;
+}
+
 /* -------- HEADER -------- */
 
 /* - make header appear as you scroll down. Not right away.*/
@@ -367,12 +371,141 @@ span {
  }
     
 
+/* ------ CARDS ------*/
 
-
-.missions {
-   
-    height: 100vh;
+.mission-cards {
+    height: 1000px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    background-color: green;
+    background-color: #fff;
+    z-index: 2;
 }
+
+.card-row-one {
+    margin-top: 1em;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-row-two {
+    margin: 4em 0 1em;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contain-contain {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    box-shadow: 0 0 10px #232323;
+    border-radius: 20px;
+    transition: all ease-in-out 500ms;
+}
+
+.contain-contain:hover {
+    box-shadow: 0 0 10px #f0838f;
+}
+
+/* - MAke on click the box shdow turns green when card flipped*/
+
+.blin {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0 , 0, .2);
+}
+
+.mission-cards h1 {
+    font-size: 3em;
+}
+
+.card-contain {
+    position: relative;
+    height: 95%;
+    width: 95%;
+    background-color:#13191d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -8px -8px 10px -5px rgb(133, 132, 132);
+}
+
+.face {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all ease-in-out 500ms;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.front {
+    background-color:#232323;
+    color:  gainsboro;
+    position: relative;
+    z-index: 3;
+}
+
+.back {
+    background-color: #13191d;
+    transform: rotateY(180deg);
+    box-shadow: inset 8px -8px 10px -5px rgb(133, 132, 132);
+    height: 100%;
+    width: 100%;
+}
+
+.front h2 {
+    margin: .75em 0 .4em 0;
+    transform: translateZ(100px);
+}
+
+.front p {
+    width: 70%;
+    margin: 0 auto;
+    color:  gainsboro;
+    transform: translateZ(100px);
+}
+
+.flip {
+    padding: .75em 1.5em;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-contain:hover .front {
+    transform: translateY(-20%);
+}
+
+/*
+
+.back {
+    background-color: red;
+    transform: rotateY(180deg);
+}
+.card-contain:hover .back {
+    transform: rotateY(360deg);
+}
+*/

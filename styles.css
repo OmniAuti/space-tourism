@@ -238,8 +238,8 @@ span {
 
 
 .moon {
-    left: -375px;
-    top: -375px;
+    left: -400px;
+    top: -400px;
     height: 700px !important;
     z-index: 9;
     animation-name: moon;
@@ -498,7 +498,7 @@ span {
 .back-card {
     width: 96%;
     height: 96%;
-    background-color: red;
+    background: linear-gradient(to right, #b64a55 88%, #232323 12%);
     transform: rotateY(180deg) translateY(-20%);
     overflow: hidden;
 }

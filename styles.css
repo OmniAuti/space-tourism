@@ -476,6 +476,7 @@ span {
     border-radius: 20px;
     text-align: center;
     z-index:1;
+    overflow: hidden;
 }
 
 .front {
@@ -484,6 +485,7 @@ span {
     position: relative;
     z-index:1;
    overflow: hidden;
+   
 }
 
 .front img {
@@ -498,28 +500,35 @@ span {
     height: 96%;
     background-color: red;
     transform: rotateY(180deg) translateY(-20%);
+    overflow: hidden;
 }
 
 .front h2 {
     margin: .75em 0 .4em 0;
-    transform: translateZ(50px);
+    transform: translateZ(100px);
+    perspective: 100px;
 }
 
 .back-card h2 {
     margin: .75em 0 .4em 0; 
+    transform: translateZ(100px);
+    perspective: 100px;
 }
 
 .front p {
     width: 70%;
     margin: 0 auto;
     color:  gainsboro;
-    transform: translateZ(50px);
+    transform: translateZ(100px);
+    perspective: 100px;
 }
 
 .back-card p {
     width: 70%;
     margin: 0 auto;
     color:  gainsboro;
+    transform: translateZ(100px);
+    perspective: 100px;
 }
 
 .flip {

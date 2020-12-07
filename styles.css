@@ -467,8 +467,8 @@ span {
 }
 
 .face {
-    width: 95%;
-    height: 95%;
+    width: 96%;
+    height: 96%;
     position: absolute;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -498,8 +498,8 @@ span {
 }
 
 .back-card {
-    width: 95%;
-    height: 95%;
+    width: 96%;
+    height: 96%;
     background-color: red;
     transform: rotateY(180deg) translateY(-20%);
 }

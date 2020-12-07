@@ -483,6 +483,62 @@ span {
     color:  gainsboro;
     position: relative;
     z-index:1;
+   overflow: hidden;
+}
+
+.front img {
+    position: absolute;
+    left: -50%;
+    bottom: -80%;
+    transform: translateX(50%) rotate(90deg);
+}
+
+.shipship {
+    transform: translateX(-50%);
+}
+
+.back-card {
+    width: 95%;
+    height: 95%;
+    background-color: red;
+    transform: rotateY(180deg) translateY(-20%);
+}
+
+.front h2 {
+    margin: .75em 0 .4em 0;
+    transform: translateZ(50px);
+}
+
+.back-card h2 {
+    margin: .75em 0 .4em 0; 
+}
+
+.front p {
+    width: 70%;
+    margin: 0 auto;
+    color:  gainsboro;
+    transform: translateZ(50px);
+}
+
+.back-card p {
+    width: 70%;
+    margin: 0 auto;
+    color:  gainsboro;
+}
+
+.flip {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    color:  transparent;
+    transition: all ease-in-out 250ms;
+}
+
+.check:hover .flip {
+    color: #232323;
+    text-shadow: 0 0 3px #fff
 }
 
 .check:hover .front {
@@ -516,45 +572,4 @@ span {
 
 .checkbox:checked + label .contain-contain:hover {
     box-shadow: 0 0 10px green;
-}
-
-
-
-
-.back-card {
-    width: 95%;
-    height: 95%;
-    background-color: red;
-    transform: rotateY(180deg) translateY(-20%);
-}
-
-.front h2 {
-    margin: .75em 0 .4em 0;
-    transform: translateZ(50px);
-}
-
-.back-card h2 {
-    margin: .75em 0 .4em 0;
-  
-}
-
-.front p {
-    width: 70%;
-    margin: 0 auto;
-    color:  gainsboro;
-    transform: translateZ(50px);
-}
-
-.back-card p {
-    width: 70%;
-    margin: 0 auto;
-    color:  gainsboro;
-}
-
-.flip {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
 }

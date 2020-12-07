@@ -513,6 +513,8 @@ span {
     margin: .75em 0 .4em 0; 
     transform: translateZ(100px);
     perspective: 100px;
+    color: #232323;
+    transition: all ease-in-out 500ms;
 }
 
 .front p {
@@ -555,7 +557,7 @@ span {
     color: #fff;
 }
 
-.check:hover .back-card{
+.check:hover .back-card h2 {
     color: #fff;
 }
 

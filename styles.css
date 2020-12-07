@@ -195,13 +195,13 @@ span {
 
     1% {
         top: 65%;
-        transform: rotate(-40deg);
+        transform: rotate(-90deg);
         right: 50%;
         height: 100px;
     }
 
     4% {
-        top: 90%;
+        top: 80%;
         transform: rotate(-120deg);
         right: 50%;
         height: 100px;
@@ -211,7 +211,7 @@ span {
     5% {
         top: 30%;
         right: 10%;
-        transform: rotate(-120deg);
+        transform: rotate(-200deg);
         height: 100px;
     }
 

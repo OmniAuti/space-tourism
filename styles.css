@@ -381,7 +381,6 @@ span {
     align-items: center;
     position: relative;
     background-color: #fff;
-    z-index: 2;
 }
 
 .card-row-one {
@@ -404,21 +403,40 @@ span {
     align-items: center;
 }
 
+.check {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-contain input {
+  display: none;
+}
+
+
 .contain-contain {
     position: relative;
     height: 100%;
-    width: 25%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #232323;
     box-shadow: 0 0 10px #232323;
     border-radius: 20px;
-    transition: all ease-in-out 500ms;
+    transition: all ease-in-out 250ms;
 }
 
-.contain-contain:hover {
-    box-shadow: 0 0 10px #f0838f;
+.back {
+    background-color: #13191d;
+    box-shadow: inset -8px -8px 10px -5px rgb(133, 132, 132);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
 }
 
 /* - MAke on click the box shdow turns green when card flipped*/
@@ -453,59 +471,90 @@ span {
     height: 95%;
     position: absolute;
     transform-style: preserve-3d;
+    backface-visibility: hidden;
     transition: all ease-in-out 500ms;
     border-radius: 20px;
     text-align: center;
-    
+    z-index:1;
 }
 
 .front {
     background-color:#232323;
     color:  gainsboro;
     position: relative;
-    z-index: 3;
+    z-index:1;
 }
 
-.back {
-    background-color: #13191d;
-    transform: rotateY(180deg);
-    box-shadow: inset 8px -8px 10px -5px rgb(133, 132, 132);
-    height: 100%;
-    width: 100%;
+.check:hover .front {
+    transform: translateY(-20%);
+    color: #fff;
+}
+
+.check:hover .front p {
+    color: #fff;
+}
+
+.check:hover .back-card{
+    color: #fff;
+}
+
+.check:hover .back-card p {
+    color: #fff;
+}
+
+.checkbox:checked:hover + label .front {
+    transform: translateY(-20%) rotateY(180deg);
+}
+
+.checkbox:checked + label .back-card {
+    transform: rotateY(360deg);
+}
+
+.checkbox:checked:hover + label .back-card {
+    transform: translateY(-20%);
+}
+
+.checkbox:checked + label .contain-contain:hover {
+    box-shadow: 0 0 10px green;
+}
+
+
+
+
+.back-card {
+    width: 95%;
+    height: 95%;
+    background-color: red;
+    transform: rotateY(180deg) translateY(-20%);
 }
 
 .front h2 {
     margin: .75em 0 .4em 0;
-    transform: translateZ(100px);
+    transform: translateZ(50px);
+}
+
+.back-card h2 {
+    margin: .75em 0 .4em 0;
+  
 }
 
 .front p {
     width: 70%;
     margin: 0 auto;
     color:  gainsboro;
-    transform: translateZ(100px);
+    transform: translateZ(50px);
+}
+
+.back-card p {
+    width: 70%;
+    margin: 0 auto;
+    color:  gainsboro;
 }
 
 .flip {
-    padding: .75em 1.5em;
-    border-radius: 10px;
     position: absolute;
     bottom: 5%;
     left: 50%;
+    width: 100%;
     transform: translateX(-50%);
 }
-
-.card-contain:hover .front {
-    transform: translateY(-20%);
-}
-
-/*
-
-.back {
-    background-color: red;
-    transform: rotateY(180deg);
-}
-.card-contain:hover .back {
-    transform: rotateY(360deg);
-}
-*/

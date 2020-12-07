@@ -431,7 +431,7 @@ span {
 }
 
 .back {
-    background-color: #13191d;
+    background-color: #1b2429;
     box-shadow: inset -8px -8px 10px -5px rgb(133, 132, 132);
     height: 100%;
     width: 100%;
@@ -577,4 +577,26 @@ span {
 
 .checkbox:checked + label .contain-contain:hover {
     box-shadow: 0 0 10px green;
+}
+
+
+/* ---------- PRICE ---------- */
+
+.price {
+    height: 50vh;
+    width: 100%;
+}
+
+/* ----- SAFETY ------- */
+
+.saftey {
+    height: 50vh;
+    width: 100%;
+}
+
+/* ------- SING UP ------ */
+
+.sign-up {
+    height: 50vh;
+    width: 100%;
 }

@@ -238,8 +238,8 @@ span {
 
 
 .moon {
-    left: -30%;
-    top: -60%;
+    left: -20%;
+    top: -50%;
     height: 750px !important;
     z-index: 9;
     animation-name: moon;

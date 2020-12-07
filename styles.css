@@ -240,7 +240,7 @@ span {
 .moon {
     left: -375px;
     top: -375px;
-    height: 750px !important;
+    height: 700px !important;
     z-index: 9;
     animation-name: moon;
     animation-duration: 200000ms;

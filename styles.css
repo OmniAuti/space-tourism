@@ -238,8 +238,8 @@ span {
 
 
 .moon {
-    left: -20%;
-    top: -50%;
+    left: -375px;
+    top: -375px;
     height: 750px !important;
     z-index: 9;
     animation-name: moon;
@@ -488,8 +488,8 @@ span {
 
 .front img {
     position: absolute;
-    left: -50%;
-    bottom: -80%;
+    right: 50px;
+    bottom: -350px;
     transform: translateX(50%) rotate(90deg);
 }
 

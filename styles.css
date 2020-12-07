@@ -493,10 +493,6 @@ span {
     transform: translateX(50%) rotate(90deg);
 }
 
-.shipship {
-    transform: translateX(-50%);
-}
-
 .back-card {
     width: 96%;
     height: 96%;
@@ -537,8 +533,8 @@ span {
 }
 
 .check:hover .flip {
-    color: #232323;
-    text-shadow: 0 0 3px #fff
+    color: #fff;
+    text-shadow: 0 0 3px #232323;
 }
 
 .check:hover .front {

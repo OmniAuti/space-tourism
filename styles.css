@@ -269,106 +269,6 @@ span {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
-@keyframes jupiter {
-    0% {
-        bottom: -20%;
-        right: 80%;
-        transform: rotate(0deg);
-    }
-
-    10% {
-        bottom: -5%;
-        right: 70%;
-        transform: rotate(10deg);
-    }
-
-    20% {
-        bottom: 7.5%;
-        right: 60%;
-        transform: rotate(0deg);
-    }
-
-    25% {
-        bottom: 10%;
-        right: 55%;
-        transform: rotate(5deg);
-    }
-
-    28% {
-        bottom: 11%;
-        right: 52%;
-        transform: rotate(2.5deg);
-    }
-
-    29% {
-        bottom: 11.5%;
-        right: 51%;
-        transform: rotate(1.5deg);
-    }
-
-    30% {
-        bottom: 11.75%;
-        right: 50%;
-        transform: rotate(0deg);
-    }
-
-    31% {
-        bottom: 11.5%;
-        right: 49%;
-        transform: rotate(1.5deg);
-    }
-
-    32% {
-        bottom: 11%;
-        right: 48%;
-        transform: rotate(2.5deg);
-    }
-
-    35% {
-        bottom: 10%;
-        right: 45%;
-        transform: rotate(5deg);
-    }
-
-    40% {
-        bottom: 7.5%;
-        right: 40%;
-        transform: rotate(10deg);
-    }
-
-    50% {
-        bottom: 0%;
-        right:30%;
-        transform: rotate(0deg);
-    }
-
-    60% {
-        bottom: -10%;
-        right: 20%;
-        transform: rotate(10deg);
-    }
-    70% {
-        bottom: -20%;
-        right: 10%;
-    }
-
-    80% {
-        bottom: -20%;
-        right: 0%;
-    }
-
-    90% {
-        bottom: -20%;
-        right: 15%;
-    }
-     100% {
-        bottom: -20%;
-        right: 10%;
-        
-     }
-
- }
     
 
 /* ------ CARDS ------*/
@@ -498,9 +398,29 @@ span {
 .back-card {
     width: 96%;
     height: 96%;
-    background: linear-gradient(to right, #b64a55 88%, #232323 12%);
+    
     transform: rotateY(180deg) translateY(-20%);
     overflow: hidden;
+}
+
+#one-card {
+    background: linear-gradient(to right, #285680 88%, #fac176 12%);
+}
+#two-card {
+    background: linear-gradient(to right,#bababa 88%, #d1d1d1 12%);
+}
+#three-card {
+    background: linear-gradient(to right, #7f8a98 88%, #dde2f2 12%);
+}
+
+#four-card {
+    background: linear-gradient(to right, #1e9682 88%, #d5ecf2 12%);
+}
+#five-card {
+    background: linear-gradient(to right, #a03939 88%, #db3f3d 12%);
+}
+#six-card {
+    background: linear-gradient(to right, #27536b 88%,#efefef 12%);
 }
 
 .front h2 {
@@ -585,8 +505,21 @@ span {
 /* ---------- PRICE ---------- */
 
 .price {
-    height: 50vh;
+    height: 500px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price table {
+    
+}
+
+td, th, tr {
+    border: 1px solid #000;
+    padding: 2em;
 }
 
 /* ----- SAFETY ------- */

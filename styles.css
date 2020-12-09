@@ -23,7 +23,7 @@ p {
 
 /* - make header appear as you scroll down. Not right away.*/
 header {
-    height: 7vh;
+    height: 7.3vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -506,6 +506,10 @@ td, th, tr {
     padding: 1em;
     text-align: center;
     background-color:#dde2f2;
+}
+
+th:hover, td:hover {
+    transform: scale(1.2)
 }
 
 /* ------- SING UP ------ */

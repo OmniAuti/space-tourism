@@ -506,22 +506,22 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #d1d1d1;
+}
+
+.price h2 {
+    margin-bottom: 1em;
 }
 
 .price table {
-    
+    width: 95%;
 }
 
 td, th, tr {
     border: 1px solid #000;
-    padding: 2em;
-}
-
-/* ----- SAFETY ------- */
-
-.saftey {
-    height: 50vh;
-    width: 100%;
+    padding: 1em;
+    text-align: center;
+    background-color:#dde2f2;
 }
 
 /* ------- SING UP ------ */
@@ -700,15 +700,15 @@ form input: {
       .space-para:before {
         content: "";
         position: fixed;
-        top: 0;
+      
         left: 0;
         right: 0;
-        bottom: 0;
+       
         height: 100%;
         z-index: -1;
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: 120% auto;
+        background-size: cover;
       }
 
       .div-space-two {
@@ -734,13 +734,13 @@ form input: {
       .space-para-two:before {
         content: "";
         position: fixed;
-        top: 0;
+      
         left: 0;
         right: 0;
-        bottom: 0;
+       
         height: 100%;
         z-index: -1;
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: 120% auto;
+        background-size: cover;
       }

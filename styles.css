@@ -23,12 +23,12 @@ p {
 
 /* - make header appear as you scroll down. Not right away.*/
 header {
-    height: 10vh;
+    height: 9vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     background-color: rgba(255,255,255,0.3);
-
-    display: none;
     
 }
 
@@ -241,7 +241,7 @@ span {
     left: -400px;
     top: -400px;
     height: 700px !important;
-    z-index: 9;
+    z-index: 90;
     animation-name: moon;
     animation-duration: 200000ms;
     animation-iteration-count: infinite;
@@ -527,7 +527,7 @@ td, th, tr {
 /* ------- SING UP ------ */
 
 .sign-up {
-    height: 100%;
+    height: 91vh;
     width: 100%;
     text-align: center;
     background-color: #285680;
@@ -717,4 +717,30 @@ form input: {
         z-index: -1;
       }
       
+     .astro {
+         background-image: url(img/astronautone.png);
+         background-position: center;
+         background-size: cover;
+     }
  
+      th:nth-child(2) {
+          background:linear-gradient(to right, #285680 88%, #fac176 12%);
+      }
+      th:nth-child(3) {
+          background: linear-gradient(to right,#bababa 88%, #d1d1d1 12%);
+      }
+      th:nth-child(4) {
+        background: linear-gradient(to right, #7f8a98 88%, #dde2f2 12%);
+      }
+      th:nth-child(5) {
+        background: linear-gradient(to right, #1e9682 88%, #d5ecf2 12%);
+      }
+      th:nth-child(6) {
+        background: linear-gradient(to right, #a03939 88%, #db3f3d 12%);
+      }
+      th:nth-child(7) {
+        background: linear-gradient(to right, #27536b 88%,#efefef 12%);
+      }
+      th:nth-child(8) {
+        background: linear-gradient(to right, #27536b 88%,#efefef 12%);
+      }

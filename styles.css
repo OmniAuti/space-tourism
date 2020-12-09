@@ -23,35 +23,19 @@ p {
 
 /* - make header appear as you scroll down. Not right away.*/
 header {
-    height: 9vh;
+    height: 7vh;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 10;
     background-color: rgba(255,255,255,0.3);
-    
+    display: flex;
+    align-items: center;
 }
-
-.logo {
-    width: 50%;
-    height: inherit;
-    position: relative;
-    float: left;
-}
-
-.logo img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: inherit;
-    width: 75px;
-    transform: translate(-50%, -50%);
-}
-
 nav {
     position: relative;
     height: 10vh;
-    width: 50%;
+    width: 95%;
     float: right;
 }
 
@@ -527,7 +511,7 @@ td, th, tr {
 /* ------- SING UP ------ */
 
 .sign-up {
-    height: 91vh;
+    height: 100%;
     width: 100%;
     text-align: center;
     background-color: #285680;
@@ -718,9 +702,10 @@ form input: {
       }
       
      .astro {
-         background-image: url(img/astronautone.png);
+         background-image: url(img/astronaut.png);
          background-position: center;
          background-size: cover;
+
      }
  
       th:nth-child(2) {

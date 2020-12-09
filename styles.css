@@ -12,7 +12,6 @@ body {
 h1 {
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
-
 }
 
 p {
@@ -34,7 +33,7 @@ header {
 }
 nav {
     position: relative;
-    height: 10vh;
+    height: 7.3vh;
     width: 95%;
     float: right;
 }
@@ -57,6 +56,13 @@ nav a {
     font-size: 1.25em;
     color: #fff;
     padding: 1.5em;
+}
+
+@media (max-width: 800px) {
+
+    nav a {
+        font-size: .75em;
+    }
 }
 
 nav a:hover {
@@ -91,6 +97,16 @@ span {
     font-weight: 100;
 }
 
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    span {
+        font-size: 1.25rem;
+    }
+}
+
 .hero img {
     height: 100px;
     position: absolute;
@@ -109,6 +125,8 @@ span {
     animation-timing-function: linear;
     animation-delay: 2500ms;
 }
+
+
 
 @keyframes mars {
     0% {
@@ -140,6 +158,8 @@ span {
     animation-delay: 10000ms;
 }
 
+
+
 @keyframes neptune {
     0% {
         left: -10%;
@@ -155,7 +175,7 @@ span {
 
     100% {
         left: 100%;
-
+        display: none;
     }
 }
 
@@ -166,8 +186,9 @@ span {
     animation-duration: 60000ms;
     animation-timing-function: linear;
     animation-delay: 1500ms;
-  
 }
+
+
 
 @keyframes ship {
     0% {
@@ -232,6 +253,7 @@ span {
     animation-timing-function: linear;
 }
 
+
 @keyframes moon {
     0% {
         transform: rotate(0deg);
@@ -246,12 +268,27 @@ span {
     }
 }
 
-.jupiter {
-    bottom: 0;
-    animation-name: jupiter;
-    animation-duration: 20000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+@media (max-width: 800px) {
+    .mars {
+        height: 100px !important;
+        width: 100px;
+    }
+
+    .neptune {
+        height: 75px;
+        width: 100px;
+    }
+
+    .spaceship {
+        height: 75px;
+        width: 75px;
+    }
+
+    .moon {
+        height: 250px !important;
+        left: -100px;
+        top: -100px;
+    }
 }
     
 
@@ -582,17 +619,18 @@ fieldset {
         padding: .1rem;
         font-size: 1rem;
         border-radius: 10px;
-        
+     
+    }
+
+    .form input:focus, select:focus {
+        outline: none;
+        box-shadow: 0 0 10px #db3f3d;
     }
 
     .form input,
         select {
         background-color:#dde2f2;
     }
-
-form input: {
-    outline-color: red;
-}
 
     .pass-plus {
      display: none;
@@ -620,6 +658,11 @@ form input: {
         padding: 1em 2.5rem;
         font-size: 1em;
         border-radius: 10px;
+    }
+
+    button:focus {
+        outline: none;
+        box-shadow: 0 0 10px #adff2f;
     }
 
     .book-it::before,
@@ -677,26 +720,6 @@ form input: {
       }
       
       .space-para {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-      }
-
-      .div-space-two {
-        position: relative;
-        overflow: hidden;
-        height: 50vh;
-        background-image: url(img/launch.jpg);
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center center;
-      }
-      
-      .space-para-two {
         position: absolute;
         top: 0;
         left: 0;

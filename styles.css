@@ -285,7 +285,7 @@ span {
     }
 
     .moon {
-        height: 250px !important;
+        height: 400px !important;
         left: -100px;
         top: -100px;
     }
@@ -515,6 +515,32 @@ span {
 
 .checkbox:checked:hover + label .back-card {
     transform: translateY(-20%);
+}
+
+
+
+@media (max-width: 800px) {
+   
+    .mission-cards {
+        height: 2075px;
+    }
+   
+    .card-row-one ,
+     .card-row-two {
+        flex-direction: column;
+        height: 750px;
+        margin-top: 10em;
+    }
+
+    .card-row-two {
+        margin-top: 14em;
+    }
+
+    .contain-contain {
+        margin-bottom: 1.5em;
+        width: 80% !important;
+        height: 300px !important;
+    }
 }
 
 

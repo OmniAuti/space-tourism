@@ -175,6 +175,7 @@
                     
                 </div>
             </div>
+        </label>
     
         </div>     
         
@@ -203,6 +204,7 @@
                         
                     </div>
             </div>
+        </label>
     
         </div>        
         
@@ -230,6 +232,7 @@
                         
                     </div>
             </div>
+        </label>
     
        </div>
 
@@ -306,7 +309,9 @@
     <section class="sign-up" id="sign-up">
 <h1>Book Today!</h1>
 
-        <form action="mailto:austin.olijar@gmail.com" method="POST">
+<div class="form-contain">
+
+        <form action="mailto:austin.olijar@gmail.com" method="POST" enctype="text/plain"   class="form">
         
             <label for="plans">Mission Plan:</label>
             <select name="plans" id="plans" required>
@@ -322,19 +327,22 @@
              
             <label for="date">Ideal Launch Date:</label>
             <input type="date" name="date" id="date" required>
+
+            <br>
+        
+            <label for="add-pass-ask">How Many Passengers?</label>
+                <input type="radio" name="add-pass" id="add-pass" value="add" required>One
+                <input type="radio" name="add-pass" id="add-pass" value="no-add" class="add-pass"><label for="">Two
+
+                    <br>
       
 
-            <fieldset>
+            <fieldset class="pass-one">
                 <legend>Passenger Information</legend>
 
                 <div class="contain-form">
-                    <label for="passenger-1">Passenger Name:</label>
-                    <input type="text" name="passenger-1" id="passenger-1" required placeholder="First & Last">
-                </div>
-
-                <div class="contain-form">
-                    <label for="passenger-2">Additional Passenger:</label>
-                    <input type="text" name="passenger-2" id="passenger-2" placeholder="First & Last">
+                    <label for="passenger-1-name">Passenger Name:</label>
+                    <input type="text" name="passenger-1-name" id="passenger-1-name" required placeholder="First & Last">
                 </div>
 
                 <div class="contain-form">
@@ -343,34 +351,43 @@
                         <option value="passport">Passport</option>
                         <option value="greencard">Green Card</option>
                         <option value="driver-id">Driver's License</option>
+                        <option value="galactic-id">Galactic ID</option>
                     </select>
-                    <label for="exp">Expire Date:</label>
+                    <label for="exp">Expiration Date:</label>
                     <input type="date" name="gov-id" id="exp" required>
-                    <label for="gov-id-num">Number:</label>
+                    <br>
+                    <label for="gov-id-num">Document Number:</label>
                     <input type="text" name="gov-id-num" id="gov-id-num" placeholder="1234567890" required max="10">
                 </div>
 
                 <div class="contain-form">
                     <label for="age">Age:</label>
-                    <input type="number" name="age" id="age" max="100" min="18" required placehold="18">
+                    <input type="number" name="age" id="age" max="100" min="18" required placehold="18+">
                 </div>
 
                 <div class="contain">
 
-                <label for="">Phone Number</label>
+                <label for="">Email:</label>
 
-                <input type="text" name="phone" id="phone" pattern="[0-9][!a-zA-Z!@#$%^&*()]" required placeholder="+1 (555)-555-5555">
+                <input type="email" name="email" id="email" required placeholder="@DistantEarth">
 
                 </div>
 
                 <div class="contain">
+
+
                     <label for="bags">Will You Check Bags?</label>
-                    <input type="radio" name="bags" id="bags" value="yes">Yes
-                    <input type="radio" name="bags" id="bags" value="no">No
-                </div>
-                <div class="containt">
-                    <label for="bags-num">How Many Bags?</label> <!--JAVASCRIPT FOR THIS TO APPEAR IF THEY CHECKED YES FOR RADIO???-->
-                    <input type="number" name="bags-num" id="bags-num" min="0" max="3">
+
+                        <input type="radio" name="bags" id="yes-bags" value="yes" class="bags"><label for="yes-bags" required>Yes 
+
+                            <label for="bags-num" class="bags-num" id="bags-num">How Many Bags?</label> 
+
+                                <input type="number" name="bags-num" id="bags-num" class="bags-num" min="0" max="3">
+
+                            </label>
+
+                        <input type="radio" name="bags" id="bagsno" value="no"><label for="bagsno">No</label>
+
                 </div>
 
                 <div class="contain">
@@ -381,15 +398,98 @@
                         <option value="fish">Fish</option>
                         <option value="veg">Vegetarian</option>
                     </select>
+                    <br>
                     <label for="sides">Side Dishes:</label>
-                    <input type="checkbox" name="sides" id="sides" value="fries">Fries
-                    <input type="checkbox" name="sides" id="sides" value="mashed">Mashed Potatoes
-                    <input type="checkbox" name="sides" id="sides" value="salad">Salad
+                    <input type="checkbox" name="sides" id="sides" value="fries"><label for="sides">Fries</label> 
+                    <input type="checkbox" name="sides" id="sides" value="mashed"><label for="sides">Mashed Potatoes</label>
+                    <input type="checkbox" name="sides" id="sides" value="salad"><label for="sides">Salad</label>
+                    <input type="checkbox" name="sides" id="sides" value="fruit"><label for="sides">Fruit Cup</label>
                 </div>
+
+           
 
             </fieldset>
 
-            <button>Book It!</button>
+            <fieldset class="pass-two">
+                <legend>Additional Passenger Information</legend>
+
+                <div class="contain-form">
+                    <label for="passenger-1-name">Passenger Name:</label>
+                    <input type="text" name="passenger-1-name" id="passenger-1-name" placeholder="First & Last">
+                </div>
+
+                <div class="contain-form">
+                    <label for="gov-id">Government ID:</label>
+                    <select name="gov-id" id="gov-id" required>
+                        <option value="passport">Passport</option>
+                        <option value="greencard">Green Card</option>
+                        <option value="driver-id">Driver's License</option>
+                        <option value="galactic-id">Galactic ID</option>
+                    </select>
+                    <label for="exp">Expiration Date:</label>
+                    <input type="date" name="gov-id" id="exp">
+                    <br>
+                    <label for="gov-id-num">Document Number:</label>
+                    <input type="text" name="gov-id-num" id="gov-id-num" placeholder="1234567890" max="10">
+                </div>
+
+                <div class="contain-form">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" max="100" min="18" placehold="18+">
+                </div>
+
+                <div class="contain">
+
+                    <label for="">Email:</label>
+    
+                    <input type="email" name="email" id="email" placeholder="@DistantEarth">
+    
+                    </div>
+
+                <div class="contain">
+
+
+                    <label for="bags">Will You Check Bags?</label>
+
+                        <input type="radio" name="bags" id="yes-bags" value="yes" class="bags"><label for="yes-bags">Yes 
+
+                            <label for="bags-num" class="bags-num" id="bags-num">How Many Bags?</label> 
+
+                                <input type="number" name="bags-num" id="bags-num" class="bags-num" min="0" max="3">
+
+                            </label>
+
+                        <input type="radio" name="bags" id="bagsno" value="no"><label for="bagsno">No</label>
+
+                </div>
+
+                <div class="contain">
+                    <label for="food">Inflight Meal:</label>
+                    <select name="meal" id="meal">
+                        <option value="steak">Steak</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="fish">Fish</option>
+                        <option value="veg">Vegetarian</option>
+                    </select>
+                    <br>
+                    <label for="sides">Side Dishes:</label>
+                    <input type="checkbox" name="sides" id="sides" value="fries"><label for="sides">Fries</label> 
+                    <input type="checkbox" name="sides" id="sides" value="mashed"><label for="sides">Mashed Potatoes</label>
+                    <input type="checkbox" name="sides" id="sides" value="salad"><label for="sides">Salad</label>
+                    <input type="checkbox" name="sides" id="sides" value="fruit"><label for="sides">Fruit Cup</label>
+                </div>
+
+           
+
+            </fieldset>
+        
+        </label>
+
+        <button class="book-it">Book It!</button>
+
+        </div>
+
+           
 
         </form>
     </section>

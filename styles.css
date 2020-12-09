@@ -496,10 +496,6 @@ span {
     transform: translateY(-20%);
 }
 
-.checkbox:checked + label .contain-contain:hover {
-    box-shadow: 0 0 10px green;
-}
-
 
 /* ---------- PRICE ---------- */
 
@@ -534,3 +530,67 @@ td, th, tr {
     height: 50vh;
     width: 100%;
 }
+
+.form-contain {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    text-align: center;
+    position: relative;
+}
+
+.add-pass-ask {
+    display: block;
+}
+
+fieldset {
+    width: 100%;
+}
+
+.pass-two {
+    display: none;
+}
+
+.add-pass:checked + label .pass-two {
+    display: block;
+}
+
+.add-pass:checked + label fieldset {
+    float:left;
+    width: 50%;
+}
+
+.add-
+
+.form label,
+    .form input,
+        .form select,
+            legend,
+                option,
+                select {
+        margin: .5em;
+        padding: .25rem;
+        font-size: 1em;
+        border-radius: 10px;
+    }
+
+    .pass-plus {
+     display: none;
+    }
+
+    .bags-num {
+        display: none;
+    }
+
+    .bags:checked + label .bags-num {
+        display: inline-block;
+        padding:em;
+    }
+
+    .book-it {
+        font-size: 1.5em;
+        padding: .25em .75em;
+        margin: .5em;
+    }

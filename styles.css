@@ -696,20 +696,6 @@ form input: {
         bottom: 0;
         z-index: -1;
       }
-      
-      .space-para:before {
-        content: "";
-        position: fixed;
-      
-        left: 0;
-        right: 0;
-       
-        height: 100%;
-        z-index: -1;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
 
       .div-space-two {
         position: relative;
@@ -731,16 +717,4 @@ form input: {
         z-index: -1;
       }
       
-      .space-para-two:before {
-        content: "";
-        position: fixed;
-      
-        left: 0;
-        right: 0;
-       
-        height: 100%;
-        z-index: -1;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+ 

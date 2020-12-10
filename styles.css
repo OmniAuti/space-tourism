@@ -899,6 +899,12 @@ fieldset {
         background-position: center;
         background-repeat: no-repeat;
       }
+
+      @media (max-width: 800px) {
+          .div-space {
+              display: none;
+          }
+      }
       
      .astro {
          background-image: url(img/astronaut.png);

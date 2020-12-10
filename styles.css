@@ -60,7 +60,7 @@ nav a {
 @media (max-width: 800px) {
 
     nav a {
-        font-size: .5em;
+        font-size: .75em;
         padding: .25em;
     }
 }
@@ -603,7 +603,7 @@ span {
      .card-row-two {
         flex-direction: column;
         height: 750px;
-        margin-top: 10em;
+        margin-top: 7em;
     }
 
     .card-row-two {

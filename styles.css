@@ -111,7 +111,6 @@ span {
 .hero img {
     height: 100px;
     position: absolute;
-    
 }
 
 .mars {
@@ -123,6 +122,7 @@ span {
     animation-iteration-count: infinite;
     animation-duration: 20000ms;
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 2500ms;
     -webkit-animation-name: mars;
@@ -143,18 +143,21 @@ span {
         bottom: -50%;
         left: 77%;
         transform: rotate(110deg);
+    
     }
 
     50% {
         bottom: 100%;
         left: 39%;
         transform: rotate(190deg);
+        
     }
 
     100% {
         bottom: 150%;
         left: -5%;
         transform: rotate(360deg);
+        
     }
 }
 
@@ -165,8 +168,10 @@ span {
     -webkit-animation-name: neptune;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
-    animation-duration: 50000ms;
-    -webkit-animation-duration: 50000ms;
+    animation-duration: 60000ms;
+    -webkit-animation-duration: 60000ms;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-delay: 10000ms;
@@ -180,17 +185,21 @@ span {
         left: -10%;
         top: 50%;
         transform: rotate(0deg);
+        height: 100px;
     }
 
     50% {
         left: 100%;
+        top: 50%;
         transform: rotate(-50deg);
-        display: none;
+        height: 0px;
     }
 
     100% {
         left: 100%;
-        display: none;
+        top: 50%;
+        transform: rotate(-100deg);
+        height: 0px;
     }
 }
 
@@ -441,6 +450,8 @@ span {
     position: relative;
     z-index:1;
     overflow: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .front img {
@@ -449,6 +460,8 @@ span {
     bottom: -350px;
     transform: translateX(50%) rotate(90deg);
     -webkit-transform: translateX(50%) rotate(90deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .back-card {
@@ -457,6 +470,8 @@ span {
     transform: rotateY(180deg) translateY(-20%);
     -webkit-transform: rotateY(180deg) translateY(-20%);
     overflow: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 #one-card {
@@ -516,6 +531,8 @@ span {
     width: 100%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     color:  transparent;
     transition: all ease-in-out 250ms;
     -webkit-transition: all ease-in-out 250ms;
@@ -604,12 +621,14 @@ span {
 }
 
 .price h2 {
-    margin: 1em;
+    margin: .5em;
     color: #efefef;
 }
 
 .price table {
     width: 95%;
+    border-collapse: collapse;
+    margin-bottom: .5em;
 }
 
 td, th, tr {
@@ -629,6 +648,17 @@ th:hover, td:hover {
         padding: 0;
         font-size: 1em;
     }
+
+    .price table {
+      font-size: .5em;
+    }
+    
+    .price h2 {
+        margin: .25em;
+        font-size: .75em;
+    
+    }
+
 }
 
 /* ------- SING UP ------ */
@@ -768,6 +798,51 @@ fieldset {
     }
 
 
+    @media (max-width: 800px) {
+        .sign-up h1 {
+            font-size: 1.25rem;
+            margin-bottom: .25rem;
+        }
+
+        .form label,
+    .form input,
+        .form select,
+            legend,
+                option,
+                select {
+        margin: .5em;
+        padding: .05rem;
+        font-size: .5rem;
+        }
+
+        .book-it button{
+            
+            margin: 2em auto;
+            padding: .5em 1.25rem;
+            font-size: .5em;
+        }
+
+        .button-ship {
+            height: 25px;
+            bottom: 30px;
+        }
+
+        .add-pass:checked + label .pass-one {
+            display: block;
+            width: 100%;
+            margin: 0;
+        }
+        
+        .add-pass:checked + label .pass-two {
+            display: block;
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+
+  
+
     .take-off {
        animation-name: take-off;
        animation-timing-function: linear;
@@ -796,7 +871,6 @@ fieldset {
         }
     }
 
-
     .div-space {
         position: relative;
         overflow: hidden;
@@ -806,15 +880,7 @@ fieldset {
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
-      }
-      
-      .space-para {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
+        background-repeat: no-repeat;
       }
       
      .astro {

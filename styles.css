@@ -44,6 +44,7 @@ nav ul {
     width: 100%;
     top: 50%;
     transform: translateY( -50%);
+    -webkit-transform: translateY(-50%);
     text-align: right;
 }
 
@@ -124,6 +125,15 @@ span {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 2500ms;
+    -webkit-animation-name: mars;
+    
+    -webkit-animation-timing-function: linear;
+    
+    -webkit-animation-duration: 20000ms;
+   
+    -webkit-animation-iteration-count: infinite;
+    
+    -webkit-animation-delay: 2500ms;
 }
 
 
@@ -152,10 +162,15 @@ span {
     left: -100px;
     top: 50%;
     animation-name: neptune;
+    -webkit-animation-name: neptune;
     animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
     animation-duration: 50000ms;
+    -webkit-animation-duration: 5000ms;
     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
     animation-delay: 10000ms;
+    -webkit-animation-delay: 10000ms;
 }
 
 
@@ -186,6 +201,15 @@ span {
     animation-duration: 60000ms;
     animation-timing-function: linear;
     animation-delay: 1500ms;
+    -webkit-animation-name: ship;
+    
+    -webkit-animation-timing-function: linear;
+    
+    -webkit-animation-duration: 60000ms;
+   
+    -webkit-animation-iteration-count: infinite;
+    
+    -webkit-animation-delay: 1500ms;
 }
 
 
@@ -251,6 +275,13 @@ span {
     animation-duration: 200000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    -webkit-animation-name: moon;
+    
+    -webkit-animation-timing-function: linear;
+    
+    -webkit-animation-duration: 200000ms;
+   
+    -webkit-animation-iteration-count: infinite;
 }
 
 
@@ -349,6 +380,7 @@ span {
     box-shadow: 0 0 10px #232323;
     border-radius: 20px;
     transition: all ease-in-out 250ms;
+    -webkit-transition: all ease-in-out 250ms;
 }
 
 .back {
@@ -396,6 +428,7 @@ span {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
     border-radius: 20px;
     text-align: center;
     z-index:1;
@@ -407,8 +440,7 @@ span {
     color: gainsboro;
     position: relative;
     z-index:1;
-   overflow: hidden;
-   
+    overflow: hidden;
 }
 
 .front img {
@@ -416,13 +448,14 @@ span {
     right: 50px;
     bottom: -350px;
     transform: translateX(50%) rotate(90deg);
+    -webkit-transform: translateX(50%) rotate(90deg);
 }
 
 .back-card {
     width: 96%;
     height: 96%;
-    
     transform: rotateY(180deg) translateY(-20%);
+    -webkit-transform: rotateY(180deg) translateY(-20%);
     overflow: hidden;
 }
 
@@ -457,6 +490,7 @@ span {
     -webkit-transform: translateZ(100px);
     color: #232323;
     transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
 }
 
 .front p {
@@ -484,6 +518,7 @@ span {
     -webkit-transform: translateX(-50%);
     color:  transparent;
     transition: all ease-in-out 250ms;
+    -webkit-transition: all ease-in-out 250ms;
 }
 
 .check:hover .flip {
@@ -577,8 +612,6 @@ span {
     width: 95%;
 }
 
-
-
 td, th, tr {
     border: 1px solid #000;
     padding: 1em;
@@ -643,8 +676,6 @@ fieldset {
 .add-pass:checked + label .pass-two {
     display: block;
 }
-
-
 
 .add-pass:checked + label .pass-one {
     float: left;
@@ -731,7 +762,9 @@ fieldset {
         bottom: 100px;
         left: 50%;
         transform: translateX(-50%) rotate(180deg);
+        -webkit-transform: translateX(-50%) rotate(180deg);
         transition: all ease-in-out 5000ms;
+        -webkit-transition: all ease-in-out 5000ms;
     }
 
 
@@ -739,7 +772,14 @@ fieldset {
        animation-name: take-off;
        animation-timing-function: linear;
        animation-duration: 50000ms;
-        animation-iteration-count: infinite;
+       animation-iteration-count: infinite;
+       -webkit-animation-name: take-off;
+    
+       -webkit-animation-timing-function: linear;
+       
+       -webkit-animation-duration: 50000ms;
+      
+       -webkit-animation-iteration-count: infinite;
     }
 
     @keyframes take-off {
@@ -765,7 +805,7 @@ fieldset {
         -webkit-background-size: cover;
         background-size: cover;
         background-attachment: fixed;
-        background-position: center center;
+        background-position: center;
       }
       
       .space-para {

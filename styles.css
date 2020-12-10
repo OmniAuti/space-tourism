@@ -602,12 +602,12 @@ span {
     .card-row-one ,
      .card-row-two {
         flex-direction: column;
-        height: 750px;
-        margin-top: 7em;
+        height: 50%;
+        margin-top: 0em;
     }
 
     .card-row-two {
-        margin-top: 14em;
+        margin-top: 5em;
     }
 
     .contain-contain {
@@ -618,6 +618,7 @@ span {
 
     .mission-cards h1 {
         font-size: 1em;
+        margin: 1em;
     }
 }
 

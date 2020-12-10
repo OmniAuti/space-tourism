@@ -894,6 +894,7 @@ fieldset {
         -webkit-background-size: cover;
         background-size: cover;
         background-attachment: fixed;
+        -webkit-background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
       }

@@ -166,7 +166,7 @@ span {
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
     animation-duration: 50000ms;
-    -webkit-animation-duration: 5000ms;
+    -webkit-animation-duration: 50000ms;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-delay: 10000ms;
@@ -317,8 +317,8 @@ span {
 
     .moon {
         height: 400px !important;
-        left: -100px;
-        top: -100px;
+        left: -200px;
+        top: -200px;
     }
 }
     

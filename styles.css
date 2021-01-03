@@ -407,6 +407,7 @@ span {
     border-radius: 20px;
     transition: all ease-in-out 250ms;
     -webkit-transition: all ease-in-out 250ms;
+  
 }
 
 .back {
@@ -416,6 +417,7 @@ span {
     width: 100%;
     position: absolute;
     border-radius: 20px;
+ 
 }
 
 /* - MAke on click the box shdow turns green when card flipped*/
@@ -443,6 +445,7 @@ span {
     align-items: center;
     border-radius: 20px;
     box-shadow: -8px -8px 10px -5px rgb(133, 132, 132);
+    
 }
 
 .face {
@@ -451,7 +454,6 @@ span {
     position: absolute;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: all ease-in-out 500ms;
     -webkit-transition: all ease-in-out 500ms;
@@ -459,10 +461,13 @@ span {
     text-align: center;
     z-index:1;
     overflow: hidden;
+    
 }
 
 .front {
-    background-color:#232323;
+    background-color:rgba(255,255,255, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     color: gainsboro;
     position: relative;
     z-index:1;
@@ -479,6 +484,7 @@ span {
     -webkit-transform: translateX(50%) rotate(90deg);
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    
 }
 
 .back-card {
@@ -489,25 +495,27 @@ span {
     overflow: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 
 #one-card {
-    background: linear-gradient(to right, #285680 88%, #fac176 12%);
+    background: linear-gradient(to right, rgba(40, 86, 128, 0.2) 88%, rgba(250, 193, 118, 0.9) 12%);
 }
 #two-card {
-    background: linear-gradient(to right,#bababa 88%, #d1d1d1 12%);
+    background: linear-gradient(to right,rgba(186, 186, 186, 0.2) 88%, rgba(209, 209, 209, 0.9) 12%);
 }
 #three-card {
-    background: linear-gradient(to right, #7f8a98 88%, #dde2f2 12%);
+    background: linear-gradient(to right, rgba(127, 138, 152, 0.2) 88%, rgba(221, 226, 242, 0.9) 12%);
 }
 #four-card {
-    background: linear-gradient(to right, #1e9682 88%, #d5ecf2 12%);
+    background: linear-gradient(to right, rgba(30, 150, 130, 0.2) 88%, rgba(213, 236, 242, 0.9) 12%);
 }
 #five-card {
-    background: linear-gradient(to right, #a03939 88%, #db3f3d 12%);
+    background: linear-gradient(to right, rgba(160, 57, 57, 0.2) 88%, rgba(219, 63, 61, 0.9) 12%);
 }
 #six-card {
-    background: linear-gradient(to right, #27536b 88%,#efefef 12%);
+    background: linear-gradient(to right, rgba(39, 83, 107, 0.2) 88%, rgba(239, 239, 239, 0.9) 12%);
 }
 
 .front h2 {
@@ -570,7 +578,7 @@ span {
     color: #fff;
 }
 
-.check:hover .back-card h2 {
+.back-card h2 {
     color: #fff;
 }
 
@@ -583,14 +591,20 @@ span {
     -webkit-transform: translateY(-20%) rotateY(180deg);
 }
 
+.checkbox:checked + label .front {
+    opacity: 0;
+}
+
 .checkbox:checked + label .back-card {
     transform: rotateY(360deg);
-    -webkit-transform: translateY(360deg)
+    -webkit-transform: translateY(360deg);
+   
 }
 
 .checkbox:checked:hover + label .back-card {
     transform: translateY(-20%);
-    -webkit-transform: translateY(-20%)
+    -webkit-transform: translateY(-20%);
+  
 }
 
 

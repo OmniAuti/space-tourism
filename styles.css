@@ -123,7 +123,7 @@ span {
 }
 
 .mars {
-    bottom: -200px;
+    bottom: -50%;
     left: 60%;
     height: 180px !important;
     width: 180px;
@@ -484,6 +484,8 @@ span {
     overflow: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .front img {

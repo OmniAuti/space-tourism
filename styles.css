@@ -625,7 +625,7 @@ span {
     .card-row-one ,
      .card-row-two {
         flex-direction: column;
-        height: 50%;
+        height: 45%;
         margin-top: 0em;
     }
 
@@ -645,13 +645,18 @@ span {
     }
 
     .checkbox:checked:hover + label .back-card {
-        transform: translateY(0%) !important;
-        -webkit-transform: translateY(0%) !important;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        opacity: 1;
     }
 
     .checkbox:checked:hover + label .front {
         transform: translateY(0%) rotateY(180deg) !important;
         -webkit-transform: translateY(0%) rotateY(180deg) !important;
+    }
+
+    .check .back-card {
+       opacity: 0;
     }
 
     .check:hover .front {

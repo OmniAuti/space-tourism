@@ -504,8 +504,8 @@ span {
 .back-card {
     width: 96%;
     height: 96%;
-    transform: rotateY(180deg) translateY(-20%);
-    -webkit-transform: rotateY(180deg) translateY(-20%);
+    transform: rotateY(180deg) translateY(0%);
+    -webkit-transform: rotateY(180deg) translateY(0%);
     overflow: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;

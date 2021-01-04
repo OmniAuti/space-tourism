@@ -109,6 +109,7 @@ span {
 @media (max-width: 800px) {
     .hero h1 {
         font-size: 2.5em;
+        z-index: 5;
     }
 
     span {
@@ -611,7 +612,6 @@ span {
 .checkbox:checked:hover + label .back-card {
     transform: translateY(-20%);
     -webkit-transform: translateY(-20%);
-  
 }
 
 
@@ -647,21 +647,16 @@ span {
     .checkbox:checked:hover + label .back-card {
         transform: translateY(0%);
         -webkit-transform: translateY(0%);
-        opacity: 1;
     }
 
     .checkbox:checked:hover + label .front {
-        transform: translateY(0%) rotateY(180deg) !important;
-        -webkit-transform: translateY(0%) rotateY(180deg) !important;
-    }
-
-    .check .back-card {
-       opacity: 0;
+        transform: translateY(0%) rotateY(180deg);
+        -webkit-transform: translateY(0%) rotateY(180deg);
     }
 
     .check:hover .front {
-        transform: translateY(0%) !important;
-        -webkit-transform: translateY(0%) !important;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
     }
 }
 

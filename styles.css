@@ -415,7 +415,8 @@ span {
     border-radius: 20px;
     transition: all ease-in-out 250ms;
     -webkit-transition: all ease-in-out 250ms;
-  
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .back {
@@ -425,10 +426,9 @@ span {
     width: 100%;
     position: absolute;
     border-radius: 20px;
- 
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
-
-/* - MAke on click the box shdow turns green when card flipped*/
 
 .blin {
     height: 100%;
@@ -453,7 +453,8 @@ span {
     align-items: center;
     border-radius: 20px;
     box-shadow: -8px -8px 10px -5px rgb(133, 132, 132);
-    
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .face {

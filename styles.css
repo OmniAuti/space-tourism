@@ -469,7 +469,8 @@ span {
     text-align: center;
     z-index:1;
     overflow: hidden;
-    
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .front {
@@ -505,6 +506,8 @@ span {
     -webkit-transform-style: preserve-3d;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 #one-card {
@@ -569,6 +572,8 @@ span {
     color:  transparent;
     transition: all ease-in-out 250ms;
     -webkit-transition: all ease-in-out 250ms;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .check:hover .flip {
@@ -658,6 +663,17 @@ span {
         transform: translateY(0%);
         -webkit-transform: translateY(0%);
     }
+
+}
+
+
+
+
+
+
+
+
+
 }
 
 

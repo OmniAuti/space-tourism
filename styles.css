@@ -99,7 +99,7 @@ nav a:hover {
     margin-top: 1em;
     transform: translateZ(100px);
     position: relative;
-    z-index: 5;
+    z-index: 5 !important;
 }
 
 span {

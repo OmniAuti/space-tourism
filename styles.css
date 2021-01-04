@@ -644,18 +644,18 @@ span {
     }
 
     .checkbox:checked:hover + label .back-card {
-        transform: translateY(0%);
-        -webkit-transform: translateY(0%)
+        transform: translateY(0%) !important;
+        -webkit-transform: translateY(0%) !important;
     }
 
     .checkbox:checked:hover + label .front {
-        transform: translateY(0%) rotateY(180deg);
-        -webkit-transform: translateY(0%) rotateY(180deg);
+        transform: translateY(0%) rotateY(180deg) !important;
+        -webkit-transform: translateY(0%) rotateY(180deg) !important;
     }
 
     .check:hover .front {
-        transform: translateY(0%);
-        -webkit-transform: translateY(0%);
+        transform: translateY(0%) !important;
+        -webkit-transform: translateY(0%) !important;
     }
 }
 

@@ -35,8 +35,6 @@ header {
     top: 0;
     z-index: 9;
     background-color: rgba(255,255,255, 0.5);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
 }
 nav {
     height: 7.3vh;

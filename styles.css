@@ -4,6 +4,16 @@
     margin: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+
 
 /* TYPOGRAPHY */
 

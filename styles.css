@@ -4,16 +4,6 @@
     margin: 0;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-  }
-
-html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-
 
 /* TYPOGRAPHY */
 
@@ -79,6 +69,12 @@ li a {
 
     nav a {
         font-size: .75em;
+    }
+}
+
+@media (max-width: 375px) {
+    nav a {
+        font-size: .5em;
     }
 }
 
@@ -662,7 +658,7 @@ span {
 
     .mission-cards h1 {
         font-size: 1em;
-        margin: 1em;
+        margin: 1.5em;
     }
 
     .checkbox:checked:hover + label .back-card {

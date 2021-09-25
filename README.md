@@ -1,4 +1,4 @@
 # space-tourism
-A website for space tourism flights
+A typical everyday website for space tourism flights
 
-https://autiomni.github.io/space-tourism/
+https://omniauti.github.io/space-tourism/
